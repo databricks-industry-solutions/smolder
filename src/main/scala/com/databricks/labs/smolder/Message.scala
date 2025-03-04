@@ -52,6 +52,7 @@ private[smolder] object Message {
 
     Message(UTF8String.fromString(lines.next),
             lines.toSeq
+              .filterNot(s => s.isEmpty)
               .map(Segment(_)))
   }
 
