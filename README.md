@@ -6,6 +6,12 @@
   A library for burning through electronic health record data using Apache Spark&trade;
 </p>
 
+# Note: Update regarding HL7v2 parsing
+
+Smolder is one of the first solutions adopted in industry. Please check out [hl7v2-funke](https://github.com/databricks-industry-solutions/funke-hl7v2) for an updated approach on HL7v2 with support for Unity Catalog, streaming, python interface, and some enhanced features like dynamic separator extraction from the message header. 
+
+# Smolder
+
 Smolder provides an Apache Spark&trade; SQL data source for loading EHR data from
 [HL7v2](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=244)
 message formats. Additionally, Smolder provides helper functions that can be used
